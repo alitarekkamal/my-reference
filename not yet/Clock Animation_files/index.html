@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://s.codepen.io/boomerang/iFrameKey-a3367dde-4b34-c1b5-ad0b-243d2bebaeeb/index.html -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js"></script><script src="./css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js"></script><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/rahulsel/pen/MGXJjE">
+
+
+<style class="cp-pen-styles">*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+body{
+  min-height:100%;
+  background:#00a88f;
+}
+.clock{
+  position:relative;
+  height:200px;
+  width:200px;
+  background:white;
+  box-sizing:border-box;
+  border-radius:100%;
+  border:10px solid #67d2cb;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+.clock .top{
+  position:absolute;
+  width:3px;
+  height:8px;
+  background: black;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.clock .right{
+  position:absolute;
+  width:8px;
+  height:3px;
+  background: black;
+  top:0;
+  bottom:0;
+  right:0;
+  margin:auto 0;
+}
+.clock .bottom{
+  position:absolute;
+  width:3px;
+  height:8px;
+  background: black;
+  margin:0 auto;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+.clock .left{
+  position:absolute;
+  width:8px;
+  height:3px;
+  background: black;
+  margin:auto 0;
+  right:0;
+  top:0;
+  bottom:0;
+  left:0;
+}
+.clock .center{
+  height:6px;
+  width:6px;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  background:black;
+  border-radius:100%;
+}
+
+.clock .shadow{
+  height:200px;
+  width:200px;
+  position:absolute;
+  left:60px;
+  top:60px;
+  transform: rotate(135deg);
+  background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.1));
+}
+.clock .hour{
+  width:3px;
+  heigth:100%;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:0 auto;
+  animation:time 60s infinite linear;
+}
+.clock .hour:before{
+  position:absolute;
+  content:'';
+  background:black;
+  height:60px;
+  width:3px;
+  top:30px;
+  
+  
+  
+}
+
+.clock .minute{
+  width:1px;
+  height:100%;
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  animation: time 30s infinite linear;
+}
+
+.clock .minute:before{
+  position:absolute;
+  content:'';
+  background:black;
+  height:40px;
+  width:1px;
+  top:50px;
+}
+
+.clock .second{
+  width:2px;
+  height:100%;
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  animation:time 15s infinite linear;
+}
+
+.clock .second:before{
+  position:absolute;
+  content:'';
+  background:red;
+  height:45px;
+  top:45px;
+  width:2px;
+}
+
+@keyframes time{
+  to{
+    transform:rotate(360deg);
+  }
+}</style></head><body>
+
+<div class="clock">
+  <div class="top"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>
+  <div class="center"></div>
+  <div class="shadow"></div>
+  <div class="hour"></div>
+  <div class="minute"></div>
+  <div class="second"></div>
+</div>
+
+</body></html>
